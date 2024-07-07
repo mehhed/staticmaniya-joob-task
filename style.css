@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-image: url("https://raw.githubusercontent.com/mehhed/fakeData/main/Screenshot%202024-07-06%20220038.png");
+  background-repeat: repeat;
+  color: white;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* banner section css  */
+header {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+
+/* banner section css  */
+#banner {
+  height: 900px;
+  width: 900px;
+  margin: auto;
+  border-radius: 100%;
+  border: 3px dashed green;
+  box-sizing: border-box;
+  margin-top: -135px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.play {
+  position: absolute;
+  top: 49%;
+  right: -3.5%;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.backgroudImg {
+  height: 500px;
+  width: 500px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.bannerBG {
+  margin: auto;
+}
+
+/* section two css  */
+#sectionTwo {
+  background: #f9f9f9;
+  padding: 100px 50px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* section three css  */
+#sectionThree {
+  height: 800px;
+  overflow: hidden;
+}
+#sectionThree img {
+  width: 100%;
+}
+
+/* about section css  */
+#about {
+  height: 1378px;
+  background-image: url("./imgs/1a44f33f6db4403404cd15ce5611172d.png"),
+    url("./imgs/6b46ba6a0c4b96109d329c2b71b29d46.png"),
+    url("./imgs/e4436ee6ab60335b551b7ea914721e08.png"),
+    url("./imgs/2e0efa433eacbe86648fdd68087d6915.png");
+
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 401px, 401px, 401px 531px, 401px;
+  background-position: left 50px top 300px, right 50px top 50px,
+    left 150px bottom 100px, right 150px bottom 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.aboutContent {
+  width: 70%;
+  margin: auto;
+  border-radius: 30%;
+  /* background-image: url("./imgs/Screenshot\ 2024-07-07\ 034725.png");
+  background-repeat: repeat;
+  box-shadow: 0px 0px 81px #1d3b38; */
+  text-align: center;
+  z-index: 99;
+}
+.aboutContent::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1%;
+  height: 1%;
+  border-radius: 30%;
+  box-shadow: 0px 0px 500px 500px #1b3936ca;
+  z-index: -1;
+}
+
+/* unique room section  */
+#uniqueRoom {
+  background: #f9f9f9;
+}
+#uniqueRoom img {
+  width: 100%;
+}
+#uniqueRoom .uniqueRoomContent {
+  padding: 100px;
+}
+.uniqueRoomContent h2 {
+  font-size: 60px;
+  color: #1b3936;
+}
+.roomContainer {
+  padding: 0px 100px 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.roomContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* signUp section css  */
+#signUp {
+  padding: 100px;
+  background-color: transparent;
+}
+.signUpContainer {
+  text-align: center;
+  border: 1px solid rebeccapurple;
+  padding: 120px 50px;
+  background-image: url("./imgs/48c6116d36be51e6135421c362f77bfa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.mailInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* experiences section css*/
+#experience {
+  background: #f9f9f9;
+}
+.experienceHeading {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 50px 100px;
+  color: #1e3c39;
+}
+
+.carousel {
+  display: flex;
+  gap: 100px;
+  padding: 50px 100px;
+}
+.carouselCardContainer {
+  width: 378px;
+  height: 477px;
+  position: relative;
+}
+.carouselCardContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carouselCardText {
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+  right: 6%;
+  background-color: white;
+  padding: 20px;
+  color: black;
+}
+.carouselCardText h3 {
+  font-size: 22px;
+}
+.carouselCardText p {
+  font-size: 16px;
+}
+
+.sliderButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 100px;
+}
+.sliderButton button {
+  border: none;
+  border-radius: 100%;
+  padding: 0%;
+  cursor: pointer;
+}
+
+/* ========================== */
+
+/* footer section css  */
+
+footer button {
+  margin-top: 70px;
+  display: inline-block;
+  padding: 10px 30px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.footerRowOne {
+  padding: 80px 100px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: #f9f9f9;
+}
+
+.footersButton {
+  background: transparent;
+  display: flex;
+}
+.footersButton a {
+  display: block;
+  height: 300px;
+  flex: 1 1 0%;
+  width: auto;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLink {
+  padding: 20px 100px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footerLink a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 10px 20px;
+}
