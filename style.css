@@ -51,6 +51,7 @@ header {
   margin: auto;
   border-radius: 100%;
   border: 3px dashed green;
+  border-spacing: 10px;
   box-sizing: border-box;
   margin-top: -135px;
   display: flex;
@@ -200,11 +201,83 @@ header {
   color: #1e3c39;
 }
 
-.carousel {
-  display: flex;
-  gap: 100px;
-  padding: 50px 100px;
+/* slider two css  */
+.wrapper {
+  width: 100%;
+  position: relative;
+  background: #f9f9f9;
+  padding: 100px 100px 180px 100px;
+  box-sizing: border-box;
 }
+.wrapper i {
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  border: none;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #f9f9f9;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child {
+  left: 46%;
+}
+.wrapper i:last-child {
+  right: 46%;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 60px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #f9f9f9;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-left: -100px;
+}
+
 .carouselCardContainer {
   width: 378px;
   height: 477px;
@@ -231,18 +304,16 @@ header {
   font-size: 16px;
 }
 
-.sliderButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 100px;
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
 }
-.sliderButton button {
-  border: none;
-  border-radius: 100%;
-  padding: 0%;
-  cursor: pointer;
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
 }
 
 /* ========================== */
