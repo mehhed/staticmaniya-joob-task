@@ -268,7 +268,6 @@ header {
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 342px;
   list-style: none;
   background: #f9f9f9;
   cursor: pointer;
