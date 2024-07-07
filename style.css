@@ -7,6 +7,10 @@ body {
   color: white;
 }
 
+/* ========================================================== */
+/*                     navigation bar css                      */
+/* ========================================================== */
+
 nav {
   width: 100%;
   padding: 20px 40px;
@@ -26,18 +30,20 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
 }
 
 .logo {
   font-size: 1.5rem;
-  font-weight: bold;
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-/* banner section css  */
+/* =============================================== */
+
+/* ================================== */
+/*        banner section css           */
+/* ================================== */
 header {
   position: relative;
   height: 800px;
@@ -75,12 +81,15 @@ header {
   width: 500px;
   border-radius: 100%;
   position: absolute;
+  top: 22%;
+  left: 23%;
   z-index: -1;
 }
 
 .bannerBG {
   margin: auto;
 }
+/* ===================================== */
 
 /* section two css  */
 #sectionTwo {
@@ -364,4 +373,18 @@ footer button {
   color: black;
   display: inline-block;
   padding: 10px 20px;
+  font-size: 18px;
+}
+
+.font-400 {
+  font-weight: 400 !important;
+}
+.font-500 {
+  font-weight: 500 !important;
+}
+.font-600 {
+  font-weight: 600 !important;
+}
+.font-700 {
+  font-weight: 700 !important;
 }

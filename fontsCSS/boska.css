@@ -121,7 +121,7 @@
     url("../fonts/boska/fonts/Boska-Variable.ttf") format("truetype");
   font-weight: 200 900;
   font-display: swap;
-  font-style: normal;
+  font-style: italic;
 }
 /**
 * This is a variable font
@@ -143,4 +143,10 @@
 
 .boska-font {
   font-family: "Boska-Regular", sans-serif;
+}
+.boska-Variable {
+  font-family: "Boska-Variable", sans-serif;
+}
+.boska-Italic {
+  font-family: "Boska-Italic", sans-serif;
 }
