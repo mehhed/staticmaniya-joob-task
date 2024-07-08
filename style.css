@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
-  background-image: url("https://raw.githubusercontent.com/mehhed/fakeData/main/Screenshot%202024-07-06%20220038.png");
+  background-image: url("./imgs/Screenshot\ 2024-07-06\ 220038.png");
   background-repeat: repeat;
   color: white;
 }
@@ -74,6 +73,7 @@ header {
   height: 60px;
   border-radius: 100%;
   z-index: 10;
+  cursor: pointer;
 }
 
 .backgroudImg {
